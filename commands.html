@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Astra Bot -- Commands</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Discord Bots are an easy way to automate tasks on Discord servers. They're also a great way to earn some extra cash. Astra Bot is specially made for this things. Moderating, Automation, Economy Usage, Music and much more etc. Join The Community Server Now !!! ">
+    <meta name="keywords"
+        content="Discord,Discord Bot,Discord Automation Bot,Discord Moderating Bot,Discord Gaming Bot,Discord Economy Bot">
+    <meta name="author" content="Rabeet Ahmed">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/images/Favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <style>
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body style="background-color: #292728;">
+
+    <div id="loader"></div>
+
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark p-4">
+        <a class="navbar-brand" href="index.html"><img src="./assets/images/Favicon.png" height="50" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="commands.html">Bot Commands</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="https://discord.gg/zjHfvrHTvZ" target="_blank">Support Server</a>
+                </li>
+                <button class="btn btn-success my-2 my-sm-0" type="submit"><a href=""
+                        style="color: rgb(32, 32, 32);text-decoration: none;">Buy Me a Coffee</a></button>
+            </ul>
+        </div>
+    </nav>
+
+
+    <style>
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            line-height: 40px;
+            transition: 0.5s;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #20FC8F;
+        }
+
+        .menu {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .content {
+            background-color: #1E1E1E;
+            padding: 30px;
+            border-radius: 20px;
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="text-center">
+            <h2 style="font-weight: 700;">Bot Commands</h2>
+        </div>
+    </div>
+
+    <div class="container mt-5 p-2">
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="menu">
+                    <ul>
+                        <li id="Welcome">👋 Welcome/Leave 👋</li>
+                        <li id="Moderation">👑 Moderation 👑</li>
+                        <li id="Useful">✨ Useful Commands ✨</li>
+                        <li id="Leveling">👆 Leveling System👇</li>
+                        <li id="Economy">💰 Economy Commands 💰</li>
+                        <li id="Reaction">🎀 Reaction Roles 🎀</li>
+                        <li id="Profile">💳 Profile Commands 💳</li>
+                        <li id="Giveaway">🎉 Giveaway Commands 🎉</li>
+                        <li id="Fun">🌹 Fun Commands 🌹</li>
+                        <li id="Games">🎮 Games Commands 🎮</li>
+                        <li id="Links">🖇️ Links 🖇️</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-9">
+
+                <div class="content my-2 contentWelcome">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>//wmsg</td>
+                                <td>Set Your Welcome Message</td>
+                                <td>//wmsg { Your Message }</td>
+                            </tr>
+                            <tr>
+                                <td>//wsetup</td>
+                                <td>Whenever you join You will be assigned a role according to your request and it will
+                                    announce on the channel you want.</td>
+                                <td>//wsetup { @role } { #channel }</td>
+                            </tr>
+                            <tr>
+                                <td>//wbg</td>
+                                <td>Set your welcome background image</td>
+                                <td>//wbg { Welcome image link }</td>
+                            </tr>
+                            <tr>
+                                <td>//leavemsg</td>
+                                <td>Set your server's leave message</td>
+                                <td>//leavemsg { Your Message }</td>
+                            </tr>
+                            <tr>
+                                <td>//leavechannel</td>
+                                <td>Leave message will be displayed on the mentioned channel</td>
+                                <td>//leavechannel { #channel }</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="content my-2 contentModeration">
+                    <p> <b>Note : </b> To use all these commands, You have to give <b style="color: red;"> Administrator
+                            Role </b> to Astra.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>//ban</td>
+                                <td>To ban members</td>
+                                <td>//ban { @username }</td>
+                            </tr>
+                            <tr>
+                                <td>//unban</td>
+                                <td>To unban members</td>
+                                <td>//unban { user id }</td>
+                            </tr>
+                            <tr>
+                                <td>//mute</td>
+                                <td>To mute members</td>
+                                <td>//mute { @username }</td>
+                            </tr>
+                            <tr>
+                                <td>//unmute</td>
+                                <td>To unmute particular members</td>
+                                <td>//unmute { @username } </td>
+                            </tr>
+                            <tr>
+                                <td>//kick</td>
+                                <td>To kick particular members</td>
+                                <td>//kick { @username }</td>
+                            </tr>
+                            <tr>
+                                <td>//clear</td>
+                                <td>To clear messages</td>
+                                <td>//clear {1/5/10}</td>
+                            </tr>
+                            <tr>
+                                <td>//setccmd</td>
+                                <td>Set custom commands for you</td>
+                                <td>//setccmd { Command / Reply }</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="container w-100">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/1Gmmgvc0Mzk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="content my-2 contentUseful">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Afk </td>
+                                <td>To enable afk</td>
+                                <td>//afk {ask message}</td>
+                            </tr>
+                            <tr>
+                                <td>Stop afk </td>
+                                <td>Disable afk</td>
+                                <td>//stop afk</td>
+                            </tr>
+                            <tr>
+                                <td>Creator</td>
+                                <td>Creator of BOT</td>
+                                <td>//creator</td>
+                            </tr>
+                            <tr>
+                                <td>embed </td>
+                                <td>Make your messages embedded </td>
+                                <td>//embed {Title I Description I Footer I Color}</td>
+                            </tr>
+                            <tr>
+                                <td>hexcodes</td>
+                                <td>To get colour codes for embedded messages</td>
+                                <td>//hexcodes</td>
+                            </tr>
+                            <tr>
+                                <td>pfp </td>
+                                <td>Generate a high quality link of your profile picture</td>
+                                <td>//pfp @username</td>
+                            </tr>
+                            <tr>
+                                <td>ping </td>
+                                <td>to check ping</td>
+                                <td>//ping</td>
+                            </tr>
+                            <tr>
+                                <td>say </td>
+                                <td>To Type as Bot</td>
+                                <td>//say {message}</td>
+                            </tr>
+                            <tr>
+                                <td>serverinfo </td>
+                                <td>To check serverinfo</td>
+                                <td>//serverinfo</td>
+                            </tr>
+                            <tr>
+                                <td>userinfo </td>
+                                <td>To check user info</td>
+                                <td>//userinfo { @username }</td>
+                            </tr>
+                            <tr>
+                                <td>calculator </td>
+                                <td>To use calculator</td>
+                                <td>//calculator</td>
+                            </tr>
+                            <tr>
+                                <td>rank </td>
+                                <td>To check your rank in server</td>
+                                <td>//rank</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="container w-100">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/FhCBI1J48nc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="content my-2 contentLeveling">
+                    <p> <b>Note : </b> To use all these commands, You have to give <b style="color: red;"> Manage Server </b> to Astra.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>blacklist </td>
+                                <td>To blacklist a channel</td>
+                                <td>//blacklist { #channel }</td>
+                            </tr>
+                            <tr>
+                                <td>unblacklist</td>
+                                <td>To unblacklist a channel</td>
+                                <td> //unblacklist { #channel }</td>
+                            </tr>
+                            <tr>
+                                <td>setmsg</td>
+                                <td>To set a level up message</td>
+                                <td>//setmsg {your message}</td>
+                            </tr>
+                            <tr>
+                                <td>lvlchannel</td>
+                                <td>To set a level up msg to a channel </td>
+                                <td>//lvlchannel { #channel }</td>
+                            </tr>
+                            <tr>
+                                <td>setbg </td>
+                                <td>set background image of your rank card</td>
+                                <td>//setbg {image link}</td>
+                            </tr>
+                            <tr>
+                                <td>setreward </td>
+                                <td> to set a custom role reward</td>
+                                <td> //setreward {level number} {@level role}</td>
+                            </tr>
+                            <tr>
+                                <td>rewards</td>
+                                <td>to check rewards </td>
+                                <td>//rewards</td>
+                            </tr>
+                            <tr>
+                                <td>setlvl</td>
+                                <td>to set your level higher</td>
+                                <td>//setlevel {level number} {@username}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="content my-2 contentEconomy">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>rich </td>
+                                <td>to check who is rich in the server</td>
+                                <td>//rich</td>
+                            </tr>
+                            <tr>
+                                <td>search </td>
+                                <td>to search the area for money</td>
+                                <td>//search</td>
+                            </tr>
+                            <tr>
+                                <td>balance </td>
+                                <td>to check your balanace</td>
+                                <td>//balance</td>
+                            </tr>
+                            <tr>
+                                <td>beg </td>
+                                <td>to beg for money</td>
+                                <td>//beg</td>
+                            </tr>
+                            <tr>
+                                <td>shop</td>
+                                <td>to buy some props</td>
+                                <td>//shop</td>
+                            </tr>
+                            <tr>
+                                <td>buy</td>
+                                <td>to buy from shop</td>
+                                <td>//buy {item}</td>
+                            </tr>
+                            <tr>
+                                <td>sell</td>
+                                <td>to sell your props</td>
+                                <td>//sell {item}</td>
+                            </tr>
+                            <tr>
+                                <td>pay</td>
+                                <td>to pay someone</td>
+                                <td>//pay @user {amount}</td>
+                            </tr>
+                            <tr>
+                                <td>work </td>
+                                <td>to work for money</td>
+                                <td>//work</td>
+                            </tr>
+                            <tr>
+                                <td>crime</td>
+                                <td>to rob for money</td>
+                                <td>//crime</td>
+                            </tr>
+                            <tr>
+                                <td>withdraw </td>
+                                <td>to withraw amount</td>
+                                <td>//withdraw</td>
+                            </tr>
+                            <tr>
+                                <td>deposit </td>
+                                <td>to deposit amount</td>
+                                <td>//deposit</td>
+                            </tr>
+                            <tr>
+                                <td>daily </td>
+                                <td>to get daily reward</td>
+                                <td>//daily</td>
+                            </tr>
+                            <tr>
+                                <td>weekly </td>
+                                <td>to get weekly reward</td>
+                                <td>//weekly</td>
+                            </tr>
+                            <tr>
+                                <td>monthly </td>
+                                <td>to get monthly reward</td>
+                                <td>//monthly</td>
+                            </tr>
+                            <tr>
+                                <td>fish </td>
+                                <td>to hunt a fish</td>
+                                <td>//fish</td>
+                            </tr>
+                            <tr>
+                                <td>inventory </td>
+                                <td>to see your inventory</td>
+                                <td>//inventory</td>
+                            </tr>
+                            <tr>
+                                <td>use laptop</td>
+                                <td>to use laptop</td>
+                                <td>//use laptop</td>
+                            </tr>
+                            <tr>
+                                <td>bake </td>
+                                <td>to bake cookies</td>
+                                <td>//bake</td>
+                            </tr>
+                            <tr>
+                                <td>hunt </td>
+                                <td>hunt</td>
+                                <td>//hunt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="content my-2 contentReaction">
+                    <p>//rrsetup</p>
+                </div>
+
+                <div class="content my-2 contentProfile">
+                    <p>set profile, set name, set age, set gender, set bio, set birthday, profile</p>
+                </div>
+
+                <div class="content my-2 contentGiveaway">
+                    <p>gstart, gstop, gm(gm: give money)</p>
+                </div>
+
+                <div class="content my-2 contentFun">
+                    <p>bff(Best friends meter), kill, marry, meme, quote, ship, shoot, slap</p>
+                </div>
+
+                <div class="content my-2 contentGames">
+                    <p>rps (Rock,Paper,Scissors), truth, dare, battle, casino, find imposter</p>
+                </div>
+
+                <div class="content my-2 contentLinks">
+                    <p>//invite, //support, //vote</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="glow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#20FC8F" fill-opacity="1"
+                d="M0,128L48,133.3C96,139,192,149,288,154.7C384,160,480,160,576,144C672,128,768,96,864,117.3C960,139,1056,213,1152,240C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text" style="color: #292728;">
+                            <p>Copyright &copy; <span id="copyright">
+                                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                                </span> &, All Right Reserved <a href="https://www.instagram.com/rabeetahmed786/"
+                                    target="_blank" style="color: #1E1E1E;">Rabeet Ahmed</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms Of Uses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <div style="height: 700vh;">
+    </div> -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        var loader;
+
+        function loadNow(opacity) {
+            if (opacity <= 0) {
+                displayContent();
+            } else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function () {
+                    loadNow(opacity - 0.05);
+                }, 50);
+            }
+        }
+
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#Welcome").click(function () {
+                $(".contentWelcome").show();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+            $("#Moderation").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").show();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+
+            $("#Useful").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").show();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+
+            $("#Leveling").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").show();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+            $("#Economy").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").show();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+            $("#Reaction").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").show();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+            $("#Profile").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").show();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+
+            $("#Giveaway").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").show();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+
+            $("#Fun").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").show();
+                $(".contentGames").hide();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+
+            $("#Games").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").show();
+                $(".contentLinks").hide();
+            });
+
+
+
+
+            $("#Links").click(function () {
+                $(".contentWelcome").hide();
+                $(".contentModeration").hide();
+                $(".contentUseful").hide();
+                $(".contentLeveling").hide();
+                $(".contentEconomy").hide();
+                $(".contentReaction").hide();
+                $(".contentProfile").hide();
+                $(".contentGiveaway").hide();
+                $(".contentFun").hide();
+                $(".contentGames").hide();
+                $(".contentLinks").show();
+            });
+        });
+    </script>
+</body>
+
+</html>
